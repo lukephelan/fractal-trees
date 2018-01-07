@@ -3,13 +3,14 @@ var slider;
 
 function setup() {
     createCanvas(500, 500);
-    slider = createSlider(0, TWO_PI, PI / 4, 0.01);
+    slider = createSlider(0, TWO_PI, 0.32, 0.01);
+    slider.position(143, 600);
 }
 
 function draw() {
-    background(51);
+    background(255);
     angle = slider.value();
-    stroke(255);
+    stroke(0);
     translate(200, height);
     branch(100);
 }
